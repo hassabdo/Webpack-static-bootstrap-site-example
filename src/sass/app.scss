@@ -1,0 +1,9 @@
+@import "variables";
+@import "fonts.scss";
+@import "~bootstrap/scss/bootstrap";
+
+body{
+    color: $blue;
+    background-image: url(../assets/images/logo.png);
+    font-size: 18px;
+}
