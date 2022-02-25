@@ -16,8 +16,8 @@ let multipleHtmlPlugins = htmlPages.map(page => {
 module.exports = {
     entry: './src/js/index.js',
     output: {
-        path: `${__dirname}/dist/static`,
-        filename: 'js/bundle.js',
+        path: `${__dirname}/dist`,
+        filename: 'static/js/bundle.js',
         clean: true,
     },
     resolve: {
@@ -28,7 +28,7 @@ module.exports = {
             'process.env': JSON.stringify(dotenv.parsed),
         }),
         new MiniCssExtractPlugin({
-            filename: 'css/app.css'
+            filename: 'static/css/app.css'
         }),
         new HtmlWebpackPlugin({
             template: 'public/pages/index.html',
@@ -59,7 +59,7 @@ module.exports = {
                 use: [{
                     loader: 'file-loader',
                     options: {
-                        outputPath: './fonts',
+                        outputPath: 'static/fonts',
                     },
                 }]
             },
@@ -68,7 +68,7 @@ module.exports = {
                 use: [{
                     loader: 'file-loader',
                     options: {
-                        outputPath: './assets',
+                        outputPath: 'static/assets',
                     },
                 }]
             },
