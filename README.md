@@ -11,6 +11,6 @@ A simple skeleton project on bundling a static site using Webpack and Babel Load
 
 1. Clone repo
 2. Run `npm install`
-3. Add your html pages in 'public/pages' folder
+3. Add your html pages in 'public/pages' without style files and javascript files
 4. Run `npm start`
 5. Run `npm run build` for production
