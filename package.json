@@ -11,8 +11,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": {
-    "name" : "Hassen Abdeljaoued",
-    "email" : "abd.hassen@gmail.com"
+    "name": "Hassen Abdeljaoued",
+    "email": "abd.hassen@gmail.com"
   },
   "repository": {
     "type": "git",

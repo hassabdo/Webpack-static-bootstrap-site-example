@@ -20,9 +20,10 @@ let multipleHtmlPlugins = htmlPages.map(page => {
 module.exports = {
     entry: './src/js/index.js',
     output: {
-        path: `${__dirname}/dist`,
+        path: path.resolve(__dirname, 'dist'),
         filename: 'static/js/bundle.js',
         clean: true,
+        publicPath: '/',
     },
     resolve: {
         extensions: ['*', '.js']
